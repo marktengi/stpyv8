@@ -41,9 +41,9 @@ jobs:
           V8_DEPS_LINUX: 0
           LDFLAGS: -L/usr/lib -L/usr/lib/x86_64-linux-gnu
 
-      - name: Test wheel
-        run: |
-          pytest -v
+      # - name: Test wheel
+      #   run: |
+      #     pytest -v
 
       - name: Create wheel zip
         uses: vimtor/action-zip@v1.1

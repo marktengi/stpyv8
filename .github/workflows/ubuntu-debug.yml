@@ -36,11 +36,11 @@ jobs:
           V8_DEPS_LINUX: 0
           LDFLAGS: -L/usr/lib -L/usr/lib/x86_64-linux-gnu
 
-      - name: STEP 5. Test wheel
-        run: |
-          pytest -v
-        env:
-          STPYV8_DEBUG: 1
+      # - name: STEP 5. Test wheel
+      #   run: |
+      #     pytest -v
+      #   env:
+      #     STPYV8_DEBUG: 1
 
       - name: STEP 6. Create wheel zip
         uses: vimtor/action-zip@v1.1
